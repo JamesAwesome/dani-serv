@@ -1,27 +1,17 @@
 # dani-serv-cookbook
 
-TODO: Enter the cookbook description here.
+A cookbook with only tests meant to help teach my girlfriend chef
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+Ubuntu 14.04
 
 ## Attributes
 
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['dani-serv']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+| Key                       | Type   | Description                  | Default            |
+|---------------------------|--------|------------------------------|--------------------|
+| ['dani-serv']['password'] | String | Password for Dani User       | 'foo'              |
+| ['dani-serv']['webroot']  | String | Webroot for hello_world site | '/srv/hello_world' |
 
 ## Usage
 
@@ -39,4 +29,4 @@ Include `dani-serv` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: James Awesome (james@wesome.nyc)
