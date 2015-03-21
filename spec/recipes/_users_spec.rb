@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'dani-serv::_users' do
-   let(:chef_run) do
+  let(:chef_run) do
     ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '14.04')
       .converge(described_recipe)
   end
