@@ -6,7 +6,7 @@ describe 'dani-serv::default' do
       .converge(described_recipe)
   end
 
-  %w( _users _packages _hello_world _nginx ).each do |recipe|
+  %w( _users _packages _hello_world _nginx _ssh ).each do |recipe|
     it "Includes the #{recipe} recipe" do
       expect(chef_run).to include_recipe("dani-serv::#{recipe}")
     end
