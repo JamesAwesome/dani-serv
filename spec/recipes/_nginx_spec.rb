@@ -6,6 +6,10 @@ describe 'dani-serv::_nginx' do
       .converge(described_recipe)
   end
 
+  before do
+    stub_command('which nginx').and_return('/usr/sbin/nginx')
+  end
+
   it 'Includes the nginx recipe' do
     expect(chef_run).to include_recipe('nginx')
   end
