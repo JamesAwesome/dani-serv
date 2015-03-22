@@ -8,7 +8,7 @@ describe 'dani-serv::_packages' do
 
   %w( git vim strace ).each do |pkg|
     it "installs #{pkg}" do
-      expect(chef_run).to include_package(pkg)
+      expect(chef_run).to installs_package(pkg)
     end
   end
 end
