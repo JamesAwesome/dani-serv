@@ -7,6 +7,6 @@ describe 'dani-serv::_ssh' do
   end
 
   it 'should install ssh' do
-    expect(chef_run).to include_package('ssh')
+    expect(chef_run).to install_package('ssh')
   end
 end
