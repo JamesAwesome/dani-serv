@@ -13,7 +13,7 @@ describe 'dani-serv::default' do
   describe port(80) do
     it { should be_listening.on('0.0.0.0') }
 
-    it 'Should return 200 on a GET request' do
+    it 'Should return 200 and "hello world" on a GET request' do
       res = Net::HTTP.get_response(URI('http://127.0.0.1:80'))
       expect(res.code).to eq('200')
       expect(res.body).to match(/[hH]ello [wW]orld/)
